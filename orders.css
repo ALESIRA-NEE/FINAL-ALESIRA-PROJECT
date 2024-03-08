@@ -1,0 +1,68 @@
+body {
+    background-image: url(img/crab\ background.jpg);
+    padding: 20px;
+}
+
+.orders {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    flex-shrink: 30px;
+    flex-basis:300px;
+    transition:transform 0-3s;
+
+}
+
+.order:hover{
+    transform:scale (1.02);
+}
+
+.order {
+    padding: 20px;
+    text-align: center;
+}
+.order img {
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+h1{
+    color:aqua;
+    text-align: center;
+}
+
+p{
+    color:black;
+    /* background-color: whitesmoke; */
+    background-color: white;
+    padding:15px;
+    border-radius: 30px;
+    font-size:large;
+    transition:transform 0-3s;
+}
+
+p:hover{
+    color:rgb(252, 69, 8);
+    transform:scale(1-02);
+}
+
+.order div{
+  display: flex;
+  flex-basis:300px;  
+  flex-shrink:23rem;
+}
+
+
+
+
+@media screen and (max-width:600px)  {
+    .orders {
+        display: flex;
+        /* grid-template-columns: auto auto auto; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-shrink: 30px;
+        flex-basis:300px;
+}
+}
